@@ -1,0 +1,98 @@
+@import 'global.css';
+
+/*####################################
+  #                                  #
+  #       CSS main_mes_projets       #
+  #                                  #
+  ##################################*/
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_front_end, #section_back_end{
+    width: 1250px;
+    max-width: 100%;
+    margin-bottom:2em;
+}
+
+#section_front_end_title, #section_back_end_title{
+    font-weight: bold;
+    text-align: center;
+    font-size:var(--font_main_section_title);
+}
+
+#front_end_repo_a, #back_end_repo_a{
+    text-decoration: none;
+    color:var(--body_color);
+}
+
+#front_end_repo, #back_end_repo{
+    margin-right:1em;
+    margin-left:1em;
+    border : 3px solid var(--border_color_general);  
+    transition : 0.3s ease-out;  
+    margin-bottom: 2em;
+}
+
+#front_end_repo:hover, #back_end_repo:hover{
+    transition : 0.3s ease-out;
+    transform : rotateX(-5deg) rotateY(5deg);
+}
+
+#front_end_container, #back_end_container{
+    display : flex;
+    gap:2em;
+    align-items: center;
+    padding : 2em 2em 0em 2em;
+}
+
+#img_front_end, #img_back_end{
+    border:1px solid var(--border_color_general);
+    padding: 1.5em;
+    max-width:175px;
+    min-width:90px;
+}
+
+#img_front_end img, #img_back_end img{
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    width:100%;
+}
+
+#front_end_description, #back_end_description{
+    font-size:var(--font_main_section);
+}
+
+#back_end_description_a{
+    color:var(--link_demark_color);
+}
+
+#back_end_description_a:hover{
+    text-decoration: underline;
+}
+
+#front_end_techno, #back_end_techno{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:1em;
+}
+
+.img_front_end_techno img, .img_back_end_techno img{
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    width:60px;
+}
+
+@media (max-width:900px) {
+    #front_end_container, #back_end_container{
+        flex-direction: column;
+    }
+    #img_front_end img, #img_back_end img{
+        max-width:100%;
+    }
+}

@@ -1,0 +1,219 @@
+@import 'global.css';
+
+/*####################################
+  #                                  #
+  #    CSS main_a_propos_de_moi      #
+  #                                  #
+  ##################################*/
+
+#section_info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#section_info_title,#section_certif_title,#section_social_title,#section_interets_title{
+    font-size: var(--font_main_section_title);
+    text-align: center;
+    font-weight: bold;
+}
+
+#top_me_info{
+    display:flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#photo_me_info{
+    max-width:470px;
+    min-width: 200px;
+    display: flex;
+}
+
+#photo_me_info img{
+    width:100%;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+#top_me_info_text{
+    width:100%;
+    max-width:1000px;
+}
+
+#top_me_info_text a{
+    text-decoration: underline;
+    color:var(--body_color);
+}
+
+.top_me_info_text_header{
+    margin:0;
+    font-size:  var(--font_main_section_small_title);
+    color:var(--body_color_title);
+    font-weight: bold;
+}
+
+.top_me_info_text_body{
+    margin:0;
+    display:flex;
+    justify-content: end;
+    padding:0.2em;
+    font-weight: bold;
+    font-size: var(--font_main_section);
+    background-color: var(--background_a_propos_de_moi);
+}
+
+.top_me_info_text_body p{
+    display: flex;
+    margin:0;
+}
+
+#top_me_info_desc p{
+    font-size: var(--font_main_section);
+    text-align: center;
+}
+
+/*##############################################
+  #                  Section CV                #
+  #############################################*/
+
+#section_cv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom:2em;
+}
+
+#cv_info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1em;
+    align-items: center;
+    font-size: var(--font_main_section);
+}
+
+#cv_info_img{
+    max-width:150px;
+    border: 1px solid var(--border_color_general);
+}
+
+#cv_info_img img{
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    width:100%;
+}
+
+/*##############################################
+  #             Section Certications           #
+  #############################################*/
+
+#section_certifications{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#certif_nvidia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    border: 3px solid var(--border_color_special);
+    padding:1em;
+    margin-bottom: 2em;
+}
+
+#certif_nvidia_img,#certif_dassault_img{
+    max-width:300px;
+    min-width:170px;
+}
+
+#certif_nvidia_img img,#certif_dassault_img img{
+    width:100%;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+/*##############################################
+  #                Section Hobbys              #
+  #############################################*/
+
+#section_interets{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#interets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap:3em;
+}
+
+#interets_chess_img,#interets_video_editing_img,#interets_calisthenics_img{
+    max-width:220px;
+    min-width:160px;
+}
+
+#interets_chess_img img,#interets_video_editing_img img,#interets_calisthenics_img img{
+    width:100%;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    transition:0.3s;
+}
+
+#interets_chess_img img:hover{
+    transform: scale(1.05);
+}
+
+#interets_video_editing_img img:hover{
+    transform: scale(1.05);
+}
+
+#interets_calisthenics_img img:hover{
+    transform: scale(1.05);
+}
+
+/*##############################################
+  #                Section Social              #
+  #############################################*/
+
+#section_social{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#social_github_img img,#social_linkledin_img img{
+    width:60px;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width:900px){
+    #top_me_info{
+        flex-direction: column;
+        align-items: center;
+    }
+}
