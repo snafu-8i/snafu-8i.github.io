@@ -1,0 +1,72 @@
+@import 'global.css';
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/*##############################################
+  #              Main Section Intro            #
+  #############################################*/
+
+#main_section_intro{
+    margin: 1.5em 1.5em 0;
+    border : 3px solid var(--border_color_warning);
+    padding : 2em;
+    border-radius:10px;
+}
+
+#main_section_intro p{
+    font-size:var(--font_main_section);
+    margin: 0;
+    text-align: center;
+}
+
+#main_section_intro_line4{
+    padding-top:1.5em;
+}
+
+/*##############################################
+  #              Main Section Body             #
+  #############################################*/
+
+#main_section_body{
+    margin: 1.5em 1.5em;
+}
+#main_section_body p{
+    margin: 0;
+}
+
+.main_section_body_text{
+    font-size:var(--font_main_section);
+    padding:0.5em 0.5em 0.5em 2em;
+    text-align: right;
+}
+
+.main_section_body_title{
+    font-size:var(--font_main_section_title);
+    color : var(--body_color_title);
+    font-weight: bold;
+}
+
+#main_section_body_line1{
+    padding-bottom:1.5em;
+    font-size:var(--font_main_section);
+}
+
+/*##############################################
+  #              Main Section Citation         #
+  #############################################*/
+
+#main_section_citation{
+    text-align:center;
+    margin-top : 1.5em;
+    margin-bottom : 1.5em;
+}
+#main_section_citation p{
+    margin: 1.5em 1.5em;
+    font-size:var(--font_main_section);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

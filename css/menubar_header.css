@@ -1,0 +1,56 @@
+@import 'global.css';
+
+/*####################################
+  #                                  #
+  #         Menubar css              #
+  #                                  #
+  ##################################*/
+
+#menubar_header{
+    display:flex;
+    justify-content: center;
+    gap : 3.5em;
+}
+
+#menubar_header_home, #menubar_header_myprojects, #menubar_header_experience, #menubar_header_about_me{
+    text-align: center;
+    font-size: var(--font_size_header);
+    padding:0.4em;
+}
+
+#menubar_header_home_a, #menubar_header_myprojects_a, #menubar_header_experience_a, #menubar_header_about_me_a{
+    text-decoration: none;
+}
+
+#menubar_header_home_a_div, #menubar_header_myprojects_a_div, #menubar_header_experience_a_div, #menubar_header_about_me_a_div{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border : 1px solid transparent;
+}
+
+#menubar_header_home_a:hover #menubar_header_home_a_div,#menubar_header_myprojects_a:hover #menubar_header_myprojects_a_div,#menubar_header_experience_a:hover #menubar_header_experience_a_div, #menubar_header_about_me_a:hover #menubar_header_about_me_a_div{
+    transform : scale(1.04);
+    transition : 0.35s ease-out;
+}
+
+#menubar_header_home_a_div img, #menubar_header_myprojects_a_div img, #menubar_header_experience_a_div img, #menubar_header_about_me_a_div img{
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    width:120px;
+    max-width: 100%;
+}
+
+#menubar_header_home_a_div p, #menubar_header_myprojects_a_div p, #menubar_header_experience_a_div p, #menubar_header_about_me_a_div p{
+    color:var(--body_color);
+    margin-top : 0px;
+    margin-bottom: 0px;
+}
+
+
+@media (max-width:900px){
+    #menubar_header{
+        display: none;
+    }
+    
+}
