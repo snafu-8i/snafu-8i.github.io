@@ -1,0 +1,74 @@
+/*####################################
+  #                                  #
+  #    Global css of the page        #
+  #                                  #
+  ##################################*/
+
+:root{
+    --body_color : #222222;
+    --border_color_general : #E0E0E0;
+    --border_color_special : #ffd166;
+    --border_color_mon_parcours :  #c1daca;
+    --font_size_header : clamp(15px,10vw,1.15rem);
+    --background_white_init : #F5F5F5;
+    --font_main_section : clamp(16px,6vw,1.4rem);
+    --font_main_section_mon_parcours : clamp(15px,5vw,1.4rem);
+    --font_main_section_title : clamp(20px,6vw,1.8rem);
+    --font_main_section_small_title : clamp(17px,5vw,1.5rem);
+    --background_body : #FAFAFA;
+    --body_color_title : #4C1D95;
+    --border_color_warning : #7C2D12;
+    --font_footer_act : clamp(10px,10vw,0.9rem);
+    --link_demark_color : #a7c957;
+    --background_a_propos_de_moi : rgb(235, 235, 235);
+    --demark_color : #e0e0de; 
+}
+
+html{
+    font:15px/22px arial,sans-serif;
+}
+
+body{
+    margin : 0;
+    color : var(--body_color);
+    background-color: var(--background_body);
+}
+
+header{
+    border-bottom : 1px solid var(--border_color_general);
+    background-color: var(--background_white_init);
+}
+
+main{
+    background-color: var(--background_body);
+}
+
+footer{
+    border-top : 1px solid var(--border_color_general);
+    font-size: var(--font_size_header);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background_white_init);
+}
+
+#footer_actualisation{
+    font-style:normal;
+    font-size: var(--font_footer_act);
+    padding-bottom:0.8em;
+    margin: 0;
+}
+
+.demark{
+    background-color: var(--demark_color);
+}
+
+@media (max-width:900px){
+    header{
+        display: flex;
+    }
+}

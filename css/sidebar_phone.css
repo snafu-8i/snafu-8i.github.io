@@ -1,0 +1,69 @@
+@import 'global.css';
+
+/*####################################
+  #                                  #
+  #    Sidebar_phone_responsive      #
+  #                                  #
+  ##################################*/
+
+#sidebar_phone{
+    display: none;
+    flex-direction: column;
+    width:125px;
+    max-width:50%;
+}
+
+#sidebar_phone_container{
+    width:125px;  
+    overflow: hidden;
+    background-color: var(--background_white_init);
+    position:absolute;
+    height:0;
+    max-width:100%;
+    z-index:1;
+}
+
+.sidebar_phone_container_added{
+    border-right : 1px solid var(--border_color_general);
+    border-bottom : 1px solid var(--border_color_general);
+}
+
+#sidebar_phone_burger{
+    position: relative;
+}
+.sidebar_phone_burger_added{
+    border-right : 1px solid var(--border_color_general);
+}
+
+#sidebar_phone_burger_div:hover{
+    cursor: pointer;
+}
+
+#sidebar_phone_home_a, #sidebar_phone_myprojects_a, #sidebar_phone_experience_a, #sidebar_phone_about_me_a{
+    text-decoration: none;
+    color : var(--body_color);
+}
+
+#sidebar_phone_burger_div img, #sidebar_phone_home_a img, #sidebar_phone_myprojects_a img, #sidebar_phone_experience_a img, #sidebar_phone_about_me_a img{
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    width:100%;
+}
+
+#sidebar_phone_home, #sidebar_phone_myprojects, #sidebar_phone_experience, #sidebar_phone_about_me, #sidebar_phone_container{
+    text-align: center;
+    font-size: var(--font_size_header);
+}
+
+#sidebar_phone_burger_exit{
+    flex-grow: 1;
+    background-color: var(--background_white_init);
+}
+
+
+
+@media (max-width:900px){
+    #sidebar_phone{
+        display: flex;
+    }
+}

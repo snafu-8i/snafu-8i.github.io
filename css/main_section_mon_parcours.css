@@ -1,0 +1,88 @@
+@import 'global.css';
+
+/*####################################
+  #                                  #
+  #       CSS main_mon_parcours      #
+  #                                  #
+  ##################################*/
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_section_mon_parcours{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+}
+
+#exp_thales_container,#exp_mcdo_container,#exp_algonis_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 3px solid var(--border_color_mon_parcours);
+    padding : clamp(1em,4vw,2em);
+    margin-bottom: 2em;    
+    width: 100%;
+    gap:2em;
+}
+
+#exp_thales_title, #exp_mcdo_title, #exp_algonis_title{
+    font-size: var(--font_main_section_title);
+}
+
+#exp_thales,#exp_mcdo,#exp_algonis{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:2em;
+    width:100%;
+}
+
+#exp_thales_img,#exp_mcdo_img,#exp_algonis_img{
+    border : 2px solid var(--border_color_special);
+    padding:1.5em;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: var(--background_body);
+    filter:brightness(98%);
+    max-width:240px;
+    min-width:50px;
+}
+
+#exp_thales_img img,#exp_mcdo_img img,#exp_algonis_img img{
+    object-fit:contain;
+    aspect-ratio: 16/9;
+    width:100%;
+}
+
+#exp_thales_div,#exp_mcdo_div,#exp_algonis_div{
+    display:flex;
+    flex-direction: column;
+}
+
+#exp_thales_div p,#exp_mcdo_div p,#exp_algonis_div p{
+    font-size :var(--font_main_section_mon_parcours);
+}
+
+.techno_util{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.techno_util_img img{
+    width:70px;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+}
+    
+@media (max-width:900px){
+    #exp_thales,#exp_mcdo,#exp_algonis{
+        flex-direction: column;
+    }
+}
