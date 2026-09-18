@@ -28,6 +28,7 @@
 
 #photo_me_info{
     max-width:470px;
+    width: 100%;
     min-width: 200px;
     display: flex;
 }
@@ -81,11 +82,13 @@
 
 #section_cv{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom:2em;
+    gap: 15px;
 }
 
 #cv_info{
@@ -106,6 +109,14 @@
     object-fit: contain;
     aspect-ratio: 16/9;
     width:100%;
+}
+
+@media (max-width:900px){
+    #section_cv{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
 }
 
 /*##############################################
@@ -131,12 +142,12 @@
     margin-bottom: 2em;
 }
 
-#certif_nvidia_img,#certif_dassault_img{
+#certif_nvidia_img,#certif_dassault_img,#certif_gdp_img, #certif_columbia_img{
     max-width:300px;
     min-width:170px;
 }
 
-#certif_nvidia_img img,#certif_dassault_img img{
+#certif_nvidia_img img,#certif_dassault_img img, #certif_gdp_img img, #certif_columbia_img img{
     width:100%;
     object-fit: contain;
     aspect-ratio: 16/9;
